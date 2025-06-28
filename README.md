@@ -82,3 +82,8 @@ hematovision/
 ├── bloodcell.h5 # Trained model file
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+
+## Demo video link
+
+testing video: https://drive.google.com/file/d/15n4VIHr3H5CSVbHgNmd9nQUF2MovoRvf/view?usp=drive_link
+jupyter notebook demo: https://drive.google.com/file/d/1h7wOH1rTygqQRkIihQ8vr9vH01kPUVMc/view?usp=drive_link
