@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hematovision</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #8e44ad;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p.description {
+            font-size: 18px;
+            color: #333;
+            margin: 0 auto 30px;
+            max-width: 700px;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Hematovision</h1>
+
+    <p class="description">
+        Hematovision is a smart blood cell recognition tool designed to help classify and identify different types of blood cells from microscope images. 
+        Blood cells play a vital role in the body — including red blood cells that carry oxygen, white blood cells that fight infections, and platelets that help stop bleeding. 
+        Upload a cell image below to get started and let Hematovision assist in fast, accurate identification.
+    </p>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required><br>
+        <button type="submit">Predict</button>
+    </form>
+
+</body>
+</html>

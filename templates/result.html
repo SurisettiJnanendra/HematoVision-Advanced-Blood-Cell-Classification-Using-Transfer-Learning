@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+        img {
+            margin-top: 20px;
+            max-width: 300px;
+            border: 2px solid #ccc;
+        }
+        .result-box {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            display: inline-block;
+            background-color: #f9f9f9;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="result-box">
+        <h2>Predicted Cell Type:</h2>
+        <p><strong>{{ class_label }}</strong></p>
+    </div>
+
+    <img src="data:image/png;base64,{{ img_data }}" alt="Uploaded Image">
+
+    <br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
